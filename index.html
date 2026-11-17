@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imersão Dois mais Um</title>
+<meta name="description" content="Imersão ao vivo para casais, dia 28/11 das 14:30 às 18:30. Em 4 horas, aprendam a administrar o dinheiro juntos e construam o planejamento financeiro da família.">
+<meta property="og:title" content="Imersão Dois mais Um">
+<meta property="og:description" content="Em 4 horas, aprendam a administrar o dinheiro juntos e construam o planejamento financeiro da família. Ao vivo, dia 28/11.">
+<meta property="og:image" content="https://doismaisum.com/assets/og.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://doismaisum.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+<!-- RASTREAMENTO: colar aqui o código do Pixel do Meta / Google Analytics -->
+
+<style>
+:root{
+  --creme:#f8f5f1;
+  --bege:#e7ddd2;
+  --areia:#c5a587;
+  --marrom:#5a4638;
+  --laranja:#ffa51f;
+  --ambar:#f6a100;
+  --vermelho:#cc0000;
+  --verde:#2e6417;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--creme);color:var(--marrom);
+  font-family:"Open Sans",system-ui,sans-serif;font-size:17px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+p{margin:0 0 1.4em}
+p:last-child{margin-bottom:0}
+h1,h2,h3{margin:0;line-height:1.25;text-wrap:balance}
+p{text-wrap:pretty}
+
+.sec{padding:56px 20px}
+.sec--bege{background:var(--bege)}
+.sec--marrom{background:var(--marrom);color:#fff}
+.wrap{max-width:860px;margin:0 auto}
+.wrap--estreito{max-width:700px}
+.centro{text-align:center}
+.destaque{font-weight:700;font-size:1.12em}
+.ambar{color:var(--ambar)}
+h2{font-size:clamp(1.5rem,4.2vw,2rem);font-weight:700}
+.sub{margin-top:.5em}
+
+/* Botão */
+.btn{
+  display:inline-block;background:var(--laranja);color:#fff;text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:.95rem;letter-spacing:.01em;
+  text-transform:uppercase;text-align:center;
+  padding:18px 44px;border-radius:999px;border:2px solid var(--marrom);
+  transition:transform .15s ease,filter .15s ease;
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.btn:focus-visible{outline:3px solid var(--marrom);outline-offset:3px}
+.cta{margin-top:40px;text-align:center}
+
+/* Abertura */
+.hero{padding:8px 20px 44px;text-align:center}
+.hero__logo{width:min(440px,88%);margin:0 auto -34px}
+.hero__data{font-weight:700;text-transform:uppercase;line-height:1.3}
+.hero__data span{display:block;font-weight:400;text-transform:none}
+.hero h1{font-size:clamp(1.45rem,4.6vw,2rem);font-weight:700;max-width:680px;margin:36px auto 18px}
+.hero__texto{max-width:560px;margin:0 auto}
+
+/* Dores */
+.frases{display:grid;grid-template-columns:repeat(2,minmax(0,340px));justify-content:center;gap:18px 20px;margin-top:34px}
+.frases span{
+  background:var(--areia);border:2px solid var(--marrom);border-radius:26px;
+  padding:20px 16px;font-style:italic;text-align:center;
+}
+
+/* Comparativo */
+.compara{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:780px;margin:0 auto}
+.compara__col{background:var(--bege);border-radius:22px;padding:26px 16px 22px;border-left:7px solid var(--vermelho);border-bottom:7px solid var(--vermelho)}
+.compara__col--sim{border-color:var(--verde)}
+.compara__col h3{font-size:1.45rem;text-align:center;margin-bottom:22px}
+.compara__col h3 b{display:block;color:var(--vermelho)}
+.compara__col--sim h3 b{color:var(--verde)}
+.compara__col ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.compara__col li{border:3px solid var(--creme);border-radius:22px;padding:14px 14px;font-size:.95rem}
+
+/* História */
+.caixa{
+  border:1.5px solid var(--bege);border-radius:28px;padding:22px 26px;
+  font-weight:700;font-size:1.12em;color:var(--areia);text-align:center;
+  max-width:620px;margin:0 auto 1.6em;
+}
+.duas{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;margin-bottom:44px}
+.foto{border-radius:26px;box-shadow:0 14px 34px rgba(0,0,0,.22)}
+.foto--giro{transform:rotate(4deg);width:230px}
+.foto--giro-esq{transform:rotate(-4deg);width:260px}
+.foto--larga{width:100%;max-width:660px;margin:0 auto 34px;border-radius:14px}
+.nasceu{display:flex;align-items:center;justify-content:center;gap:28px;margin:36px 0 40px}
+.nasceu p{font-weight:700;font-size:1.35rem;line-height:1.35;margin:0}
+
+/* Depoimentos */
+.serifa{font-family:Lora,Georgia,serif;font-weight:400;font-size:clamp(1.6rem,4.6vw,2.3rem)}
+.depo{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1040px;margin:40px auto 0}
+.depo button{padding:0;border:2px solid var(--areia);background:none;cursor:zoom-in;border-radius:6px;overflow:hidden}
+.depo button:focus-visible{outline:3px solid var(--marrom);outline-offset:3px}
+.depo img{width:100%}
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,640px)}
+dialog::backdrop{background:rgba(40,28,20,.82)}
+dialog img{width:100%;border-radius:8px;cursor:zoom-out}
+
+/* O que muda */
+.aprende{list-style:none;padding:0;margin:34px auto 0;max-width:600px;display:grid;gap:22px}
+.aprende b{display:block}
+.aprende span{display:block;font-size:.95rem;padding-left:1.7em}
+.selo{
+  background:var(--bege);border:1.5px solid var(--marrom);border-radius:26px;
+  padding:20px 28px;font-weight:700;font-size:1.12em;text-align:center;
+  max-width:420px;margin:44px auto 0;
+}
+.cta--junto{margin-top:18px}
+
+/* Fases */
+.fases{display:grid;gap:40px;max-width:500px;margin:40px auto 0}
+.fase{background:var(--bege);border-radius:30px;padding:0 34px 34px;box-shadow:-8px 8px 0 var(--marrom);position:relative}
+.fase img{width:100%;max-width:340px;margin:0 auto 26px}
+.fase__tag{
+  position:absolute;top:12px;left:50%;margin-left:-170px;
+  background:var(--creme);border:1.5px solid var(--marrom);border-radius:999px;
+  padding:5px 22px;font-weight:700;font-size:.85rem;color:#000;
+}
+.fase{color:#000}
+.fase h3{font-size:1rem;margin-bottom:20px}
+.fase ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+
+/* Oferta */
+.oferta{
+  background:var(--bege);border:1.5px solid var(--areia);border-radius:30px;padding:30px;
+  display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center;max-width:940px;margin:0 auto;
+}
+.oferta ul{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.oferta li{background:var(--marrom);color:#fff;font-weight:700;font-size:.95rem;border-radius:999px;padding:13px 22px 13px 40px;position:relative}
+.oferta li::before{content:"";position:absolute;left:20px;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:#fff}
+.oferta li.bonus{color:var(--laranja);padding-left:20px}
+.oferta li.bonus::before{display:none}
+.preco{background:var(--marrom);color:#fff;border-radius:26px;padding:6px 24px 30px;text-align:center}
+.preco img{width:210px;margin:0 auto -18px}
+.preco__de{font-size:1.2rem;text-transform:uppercase;margin:.35em 0 0}
+.preco__de s{color:var(--ambar)}
+.preco__valor{font-size:1.9rem;line-height:1.1;margin:.15em 0 0}
+.preco__valor b{font-size:3.1rem;font-weight:800;letter-spacing:-.02em}
+.preco__vista{font-weight:700;font-size:1.15rem;margin:.2em 0 1.1em}
+.preco .btn{padding:16px 22px;font-size:.82rem;border-color:#fff;display:block}
+.preco__garantia{font-size:.85rem;margin:14px 0 0;opacity:.9}
+
+/* Mentores */
+.mentores{display:flex;justify-content:center;margin-bottom:26px}
+.mentor{position:relative;width:min(300px,46vw)}
+.mentor + .mentor{margin-left:-34px;margin-top:44px}
+.mentor img{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 12%;border-radius:50%;border:9px solid var(--bege)}
+.mentor + .mentor img{border-color:var(--marrom);object-position:50% 16%}
+.mentor span{
+  position:absolute;bottom:14%;left:-4%;background:var(--marrom);color:#fff;border:2px solid var(--creme);
+  font-weight:700;font-size:.8rem;line-height:1.1;text-align:center;padding:6px 12px;
+}
+.mentor span b{display:block;color:var(--laranja);font-size:1.15em}
+.mentor + .mentor span{left:auto;right:-6%;background:#fff;color:#000;border-color:#000}
+.pill{display:inline-block;background:var(--marrom);color:#fff;font-weight:700;border-radius:999px;padding:9px 44px;margin-bottom:10px}
+.bio{border:4px solid var(--marrom);background:var(--bege);border-radius:30px;padding:24px 34px;margin-top:26px;font-size:.95rem;max-width:880px;margin-left:auto;margin-right:auto}
+.bio ul{margin:0 0 1.2em;padding-left:1.4em}
+.bio p{margin:0}
+
+/* FAQ */
+.faq{max-width:940px;margin:36px auto 0;display:grid;gap:34px}
+.faq h3{background:var(--ambar);color:#000;font-size:1rem;border-radius:999px;padding:11px 28px;margin-bottom:8px}
+.faq p{background:var(--marrom);color:#fff;border-radius:26px;padding:22px 28px 34px;font-size:.95rem}
+.faq-titulo{color:#000;font-size:clamp(1.8rem,5.4vw,2.6rem)}
+.faq-sub{color:#000;font-weight:700;text-transform:uppercase;font-size:1.1rem}
+.final h2{color:#000;font-size:clamp(1.7rem,5vw,2.4rem)}
+.final .cta{margin-top:20px}
+
+@media (max-width:720px){
+  body{font-size:16px}
+  .sec{padding:44px 18px}
+  .btn{padding:17px 16px;font-size:.84rem;display:block;max-width:420px;margin-inline:auto}
+  .frases{grid-template-columns:1fr;gap:12px}
+  .compara{grid-template-columns:1fr}
+  .duas{grid-template-columns:1fr;justify-items:center;gap:30px}
+  .nasceu{flex-direction:column;text-align:center}
+  .depo{grid-template-columns:1fr;max-width:460px}
+  .fase{padding:0 22px 28px}
+  .fase__tag{left:22px;margin-left:0}
+  .oferta{grid-template-columns:1fr;padding:18px;gap:22px}
+  .oferta li{border-radius:22px}
+  .bio{padding:20px 22px;border-radius:24px}
+  .faq h3{border-radius:20px;padding:11px 20px}
+  .faq p{padding:18px 20px 24px;border-radius:20px}
+  .mentor + .mentor{margin-left:-22px;margin-top:30px}
+  .mentor img{border-width:6px}
+  .mentor span{font-size:.7rem;padding:4px 8px}
+}
+@media (prefers-reduced-motion:reduce){
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<main>
+
+<!-- ABERTURA -->
+<header class="hero">
+  <img class="hero__logo" src="assets/logo.png" alt="Imersão Dois mais Um" width="800" height="450">
+  <p class="hero__data">Evento ao vivo dia 28/11 <span>das 14:30 às 18:30</span></p>
+  <h1>O dinheiro não precisa ser motivo de conflito entre vocês. Aprendam a administrar juntos e construir o futuro financeiro da família.</h1>
+  <p class="hero__texto">✅ Em apenas 4 horas, descubram como transformar a relação de vocês com o dinheiro, alinhar decisões e construir um planejamento financeiro que funcione para os dois.</p>
+  <div class="cta"><a class="btn" href="https://pay.hotmart.com/V108424352J">Quero nossa transformação ➔</a></div>
+</header>
+
+<!-- DORES -->
+<section class="sec sec--bege centro">
+  <div class="wrap">
+    <h2>Até quando vocês vão aguentar isso?</h2>
+    <p class="sub">Vocês até tentam se organizar... mas parece que não importa o que façam, <b>o ciclo se repete</b> mês após mês</p>
+    <div class="frases">
+      <span>Acaba o dinheiro e sobra mês.</span>
+      <span>Não vejo a cor do meu dinheiro.</span>
+      <span>A gente ganha bem, mas nunca sobra.</span>
+      <span>Mas você gastou tudo isso com o quê?</span>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="sec">
+  <div class="compara">
+    <div class="compara__col">
+      <h3>Se vocês estão <b>cansados de:</b></h3>
+      <ul>
+        <li>❌ Dinheiro ser motivo constante de discussões, cobranças e silêncio em casa.</li>
+        <li>❌ Decisões tomadas individualmente sem alinhamento com o cônjuge.</li>
+        <li>❌ Sensação contínua de trabalhar apenas para pagar contas sem ver o futuro.</li>
+        <li>❌ Zero reservas de segurança e vulnerabilidade diante de imprevistos.</li>
+      </ul>
+    </div>
+    <div class="compara__col compara__col--sim">
+      <h3>Vocês provavelmente <b>querem:</b></h3>
+      <ul>
+        <li>✅ Conversas leves, transparentes e estratégicas sobre as finanças do casal.</li>
+        <li>✅ Propósitos e metas alinhados em equipe, caminhando na mesma direção.</li>
+        <li>✅ Orçamento claro, rotina descomplicada e construção real de patrimônio.</li>
+        <li>✅ Paz de espírito, união fortalecida e segurança para a família.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><a class="btn" href="https://pay.hotmart.com/V108424352J">Participar da imersão ➔</a></div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="sec centro" style="padding-top:8px">
+  <div class="wrap wrap--estreito">
+    <h2 style="margin-bottom:.7em">NÓS JÁ ESTIVEMOS NESSE LUGAR.</h2>
+    <p>Na nossa lua de mel, até água de coco na praia precisava caber no orçamento! Gastamos mais do que podíamos na festa e não queríamos começar o casamento endividados.</p>
+    <p>E eu tinha <b>vergonha</b> daquela situação:</p>
+    <p class="caixa">Como um administrador e uma contadora tinham chegado àquele ponto?</p>
+    <p>Como recém-casados, vieram as responsabilidades. Somado a isso, a vontade de empreender juntos. Pegamos um empréstimo para realizar meu sonho de ter uma loja de roupas. Mas gastamos quase todo o dinheiro na estrutura e recorremos ao cartão de crédito para comprar os produtos.</p>
+    <p>Poucos meses depois, a loja quebrou e nossas dívidas ultrapassaram R$ 100 mil.</p>
+    <p class="destaque">O sonho de empreender acabou se transformando em uma dívida de mais de 100 mil reais.</p>
+  </div>
+</section>
+
+<section class="sec sec--marrom centro">
+  <div class="wrap">
+    <div class="duas">
+      <div>
+        <p>Eu entrei em depressão. Não era apenas um sonho que tinha dado errado. Para mim, era um <b>FRACASSO TOTAL</b>. Não conseguia trabalhar, cuidar da casa e ainda sentia que tinha colocado todo o peso do meu erro nas costas do meu marido.</p>
+        <p>Mas não estávamos sozinhos. Oramos, reconhecemos nossos erros e pedimos ajuda a Deus. Com Sua misericórdia, estratégias, disciplina e muita força, conseguimos sair daquela situação.</p>
+      </div>
+      <img class="foto foto--giro" src="assets/cinthia-pb.jpg" alt="Cinthia em um momento difícil, com a mão no rosto" width="450" height="800" loading="lazy">
+    </div>
+    <p>Os anos passaram, melhoramos nossas planilhas e parecia que tudo estava sob controle. Até que nossa primeira filha, Chloe, nasceu. Naquele mesmo período, clientes do Michael atrasaram, um deles cancelou o contrato e nossa receita despencou.</p>
+    <p>Sem reserva financeira, voltamos ao cartão de crédito e precisamos usar todo o décimo terceiro para quitar as dívidas e adaptar nosso padrão de vida.</p>
+    <p class="destaque">Aprendemos que sair das dívidas era apenas parte do caminho.<br>Precisávamos estar preparados para os imprevistos.</p>
+  </div>
+</section>
+
+<section class="sec centro" style="padding-top:28px">
+  <div class="wrap">
+    <p>Mais tarde, nossa situação melhorou, os contratos voltaram e tivemos nossa segunda filha, Sophie. Dessa vez, tínhamos começado a construir uma reserva de segurança.</p>
+    <img class="foto foto--larga" src="assets/familia.jpg" alt="Michael e Cinthia com as duas filhas" width="1599" height="1066" loading="lazy">
+    <div class="wrap wrap--estreito">
+      <p>Aos seis meses, Sophie teve uma reação alérgica ao ovo e precisou de atendimento médico. Médicos, exames, especialistas e medicamentos foram consumindo nossa reserva, que ainda era pequena. <b>Pouco a pouco, o dinheiro acabou.</b></p>
+      <p>Foi quando realmente precisamos dela que entendemos o quanto era importante ter construído uma reserva.</p>
+      <p class="caixa" style="margin-bottom:0">A vida pode trazer imprevistos que não conseguimos controlar. Mas podemos nos preparar melhor para enfrentá-los.</p>
+    </div>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/V108424352J">Quero minha vaga na imersão ➔</a></div>
+  </div>
+</section>
+
+<section class="sec sec--bege centro">
+  <div class="wrap">
+    <p>Mesmo em meio às nossas próprias dificuldades, ajudávamos outros casais com suas finanças. Um deles chegou até nós com <b>dívidas em 14 cartões de crédito.</b> Pensamos que bastaria apresentar nossa planilha.</p>
+    <p>Mas descobrimos algo muito maior: eles não conseguiam conversar sobre dinheiro sem brigar. Quanto mais ela falava, mais ele se fechava.</p>
+    <p>Orientamos que ela parasse de insistir e entrasse em oração. Poucos dias depois, aquele homem estava chorando e reconhecendo seus erros. "Só Deus para fazer algo assim", foram as palavras dela.</p>
+    <p class="destaque">Ali entendemos que o problema financeiro de um casal nem sempre está apenas nos números.</p>
+  </div>
+</section>
+
+<section class="sec centro" style="padding-top:36px">
+  <div class="wrap">
+    <p>Em outubro de 2025, nossa pastora nos aconselhou a orar sobre a possibilidade de nos unirmos profissionalmente. Inicialmente, achei desafiador demais. Mas, em maio de 2026, resolvemos buscar a direção de Deus juntos.</p>
+    <p>Começamos a enxergar de outra maneira a realidade dos casais endividados e a necessidade de ajudá-los. <b>Parecia um pedido de socorro!</b></p>
+    <div class="nasceu">
+      <img class="foto foto--giro-esq" src="assets/casal.jpg" alt="Michael e Cinthia abraçados" width="450" height="800" loading="lazy">
+      <p>Em junho de 2026,<br>nasceu a Dois Mais Um.</p>
+    </div>
+    <p>Mesmo com menos de 300 seguidores, os primeiros casais começaram a chegar e as transformações aconteceram. Em agosto, fomos convidados pela nossa igreja para realizar uma imersão com casais de líderes e pastores. Os testemunhos vieram ali mesmo.</p>
+    <div class="cta"><a class="btn" href="https://pay.hotmart.com/V108424352J">Quero participar da imersão ➔</a></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="sec sec--bege centro">
+  <h2 class="serifa">Veja o que casais como vocês<br>estão falando após a imersão:</h2>
+  <div class="depo">
+    <button type="button" aria-label="Ampliar depoimento de Ana Paula"><img src="assets/depoimento-1.png" alt="Depoimento de Ana Paula no WhatsApp agradecendo ao Michael e à Cinthia pela imersão" width="640" height="800" loading="lazy"></button>
+    <button type="button" aria-label="Ampliar depoimento de um casal"><img src="assets/depoimento-2.png" alt="Depoimento de um casal no WhatsApp agradecendo pela Imersão Financeira para Casais" width="640" height="800" loading="lazy"></button>
+    <button type="button" aria-label="Ampliar depoimentos de Lennon Freitas e Sarah Silva"><img src="assets/depoimento-3.png" alt="Depoimentos de Lennon Freitas e Sarah Silva no WhatsApp sobre a imersão" width="640" height="800" loading="lazy"></button>
+  </div>
+</section>
+<dialog id="zoom" aria-label="Depoimento ampliado"><img src="" alt=""></dialog>
+
+<!-- O QUE MUDA -->
+<section class="sec">
+  <div class="wrap">
+    <div class="centro">
+      <h2>Mas o que a imersão vai mudar pra nós?</h2>
+      <p class="sub">Vocês vão sair da imersão sabendo como:</p>
+    </div>
+    <ul class="aprende">
+      <li><b>👥 Entender como cada um lida com dinheiro</b><span>Reconhecer os comportamentos, diferenças e pontos de atenção do casal.</span></li>
+      <li><b>🤝 Tomar decisões juntos</b><span>Melhorar a comunicação, alinhar prioridades e construir objetivos em comum.</span></li>
+      <li><b>📖 Administrar com princípios bíblicos</b><span>Colocar os princípios como fundamento das decisões financeiras da família.</span></li>
+      <li><b>💲 Organizar o dinheiro na prática</b><span>Construir o orçamento do casal juntos, com uma planilha pronta para usar.</span></li>
+      <li><b>🗓️ Criar uma rotina financeira a dois</b><span>Saber como acompanhar os gastos e manter o planejamento funcionando.</span></li>
+    </ul>
+    <p class="selo">Menos improviso, mais clareza e decisões construídas juntos.</p>
+    <div class="cta cta--junto"><a class="btn" href="https://pay.hotmart.com/V108424352J">Eu quero viver essa mudança ➔</a></div>
+  </div>
+</section>
+
+<!-- FASES -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap centro">
+    <h2 style="color:#000">Na prática <span class="ambar">como funciona</span> a Imersão?</h2>
+    <p class="sub" style="max-width:520px;margin-inline:auto">Tudo se resume a <b>3 fases simples</b> que se complementam para preparar vocês antes, durante e depois do encontro ao vivo.</p>
+  </div>
+  <div class="fases">
+    <article class="fase">
+      <span class="fase__tag">FASE 01</span>
+      <img src="assets/fase-1.png" alt="Casal sentado à mesa em um encontro financeiro" width="800" height="436" loading="lazy">
+      <h3>Nessa fase você:</h3>
+      <ul>
+        <li>✅ Recebe os materiais necessários para fazer o encontro financeiro.</li>
+        <li>✅ Instruções práticas de como seguir o mês até a imersão.</li>
+        <li>✅ Veja resultados já nos primeiros dias.</li>
+      </ul>
+    </article>
+    <article class="fase">
+      <span class="fase__tag">FASE 02</span>
+      <img src="assets/fase-2.png" alt="Casal assistindo ao evento ao vivo" width="800" height="436" loading="lazy">
+      <h3>Nessa fase, do evento ao vivo, você:</h3>
+      <ul>
+        <li>✅ Aprende a lidar com as diferenças sobre dinheiro em casal.</li>
+        <li>✅ Recebe a planilha e constrói o orçamento do casal.</li>
+        <li>✅ Tem acesso a rotina financeira e estratégias para sair das dívidas.</li>
+      </ul>
+    </article>
+    <article class="fase">
+      <span class="fase__tag">FASE 03</span>
+      <img src="assets/fase-3.png" alt="Casal diante do computador com a planilha aberta" width="800" height="436" loading="lazy">
+      <h3>E na última você:</h3>
+      <ul>
+        <li>✅ Coloca em prática tudo que aprendeu na imersão.</li>
+        <li>✅ Tira suas dúvidas diretamente na plataforma através do suporte.</li>
+        <li>✅ Acessa e revisa todo o conteúdo durante 30 dias.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="sec" id="oferta" style="padding-top:20px">
+  <div class="oferta">
+    <ul>
+      <li>Acesso imediato a pré-imersão</li>
+      <li>Diagnóstico individual e do casal ao vivo</li>
+      <li>O que a Bíblia diz sobre meu dinheiro?</li>
+      <li>Construção do orçamento do casal ao vivo</li>
+      <li>Suporte completo direto pela plataforma</li>
+      <li class="bonus">Bônus 1: Aulão Planejando 2027</li>
+      <li class="bonus">Bônus 2: Veja a gravação da imersão por 30 dias</li>
+    </ul>
+    <div class="preco">
+      <img src="assets/logo-oferta.png" alt="Imersão Dois mais Um" width="800" height="800" loading="lazy">
+      <p style="margin:0">Tenha acesso a tudo isso por uma condição especial:</p>
+      <p class="preco__de">De <s>R$400</s> por:</p>
+      <p class="preco__valor">12x <b>R$25</b></p>
+      <p class="preco__vista">ou R$ 247 à vista.</p>
+      <a class="btn" href="https://pay.hotmart.com/V108424352J">Quero minha vaga com desconto ➔</a>
+      <p class="preco__garantia">Garantia de 7 dias: 100% do dinheiro de volta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENTORES -->
+<section class="sec centro" style="padding-top:20px">
+  <div class="mentores">
+    <div class="mentor"><img src="assets/michael.png" alt="Michael Barreto" width="583" height="799" loading="lazy"><span><b>seu</b>mentor</span></div>
+    <div class="mentor"><img src="assets/cinthia.png" alt="Cinthia Carlos" width="450" height="800" loading="lazy"><span><b>sua</b>mentora</span></div>
+  </div>
+  <span class="pill">QUEM SÃO</span>
+  <h2>Michael Barreto <span class="ambar">&amp; Cinthia Carlos</span></h2>
+
+  <div class="bio" style="text-align:left">
+    <ul>
+      <li>Administrador, com MBA em Finanças Empresariais.</li>
+      <li>Atendeu dezenas de empresas no <b>Sebrae</b>, onde recebeu várias premiações.</li>
+      <li>Mais de 10 anos de experiência em consultoria financeira pessoal e empresarial.</li>
+    </ul>
+    <p>A partir da experiência com empresas, identificou como muitos desafios financeiros também se repetiam dentro dos casamentos e das famílias. Iniciou os atendimentos voltados à organização financeira de casais, levando sua experiência profissional para a realidade familiar.</p>
+  </div>
+  <div class="bio" style="text-align:left">
+    <ul>
+      <li>Contadora, com mais de uma década de atuação na área, inclusive no <b>exterior</b>.</li>
+    </ul>
+    <p>Participou do desenvolvimento dos materiais e das ferramentas utilizadas nos atendimentos. Trouxe um olhar feminino para a análise das decisões financeiras e para a dinâmica do casal. Passou a atuar diretamente nos atendimentos, complementando o trabalho de Michael e fortalecendo a identificação das esposas durante o processo. Contribui para integrar a organização financeira à realidade e às necessidades dos casais.</p>
+  </div>
+
+  <div class="wrap wrap--estreito" style="margin-top:44px">
+    <p class="destaque" style="margin-bottom:.8em">Duas formações, experiências complementares e <span class="ambar">um propósito em comum.</span></p>
+    <p style="font-size:.95rem">Unimos Administração e Contabilidade à experiência profissional e à vivência de mais de 10 anos de casamento para desenvolver uma abordagem que olha para as finanças do casal de forma integral: <b>comportamento, princípios bíblicos e organização financeira.</b></p>
+    <p class="destaque" style="margin-top:2.4em"><span class="ambar">Nossa missão</span> é ajudar casais a tomarem decisões em unidade, organizarem seus recursos e construírem uma vida financeira alinhada aos seus valores e propósito.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" style="padding-top:20px">
+  <div class="centro">
+    <h2 class="faq-titulo">Ficou com alguma dúvida?</h2>
+    <p class="faq-sub">Acesse as perguntas frequentes</p>
+  </div>
+  <div class="faq">
+    <div><h3>1- Essa imersão é apenas para casais que estão endividados?</h3><p>Não! A imersão também é para casais que ganham bem, mas não conseguem guardar dinheiro, não têm um orçamento organizado, não possuem uma reserva de segurança ou não conseguem alinhar suas decisões financeiras.</p></div>
+    <div><h3>2- Já temos uma planilha financeira. Ainda assim vale a pena participar?</h3><p>Sim! Apesar da importância da planilha, ela não resolve sozinha os problemas financeiros de um casal. Por isso trabalhamos com 3 pilares: comportamental, espiritual e organização financeira.</p></div>
+    <div><h3>3- E se não conseguirmos acompanhar toda a imersão ao vivo?</h3><p>Além da participação ao vivo, até 3 dias após o evento, iremos disponibilizar a gravação da imersão e vocês terão acesso por 30 dias.</p></div>
+    <div><h3>4- E se meu cônjuge não quiser participar, eu posso?</h3><p>Sim, você até pode participar, mas a imersão foi toda pensada para o casal, por isso seu aproveitamento não será de 100%.</p></div>
+    <div><h3>5- Temos formas muito diferentes de lidar com dinheiro. A imersão pode nos ajudar?</h3><p>Sim, esse é um dos pontos principais que trabalhamos no pilar comportamental. Na imersão vocês vão aprender a lidar com as diferenças sobre dinheiro em casal.</p></div>
+    <div><h3>6- Vamos sair da imersão com nosso orçamento pronto?</h3><p>Sim! Vamos construir o orçamento de vocês ao vivo, utilizando as informações levantadas no encontro financeiro, que será antes do evento. Todas as informações para realizar o encontro estarão disponíveis imediatamente dentro da plataforma.</p></div>
+    <div><h3>7- Estamos endividados. Vamos aprender a sair das dívidas?</h3><p>Sim. Durante a imersão, vamos apresentar estratégias para organizar as dívidas e entender caminhos possíveis. Porém, cada família tem uma realidade financeira diferente e, em situações mais específicas, pode ser necessário um planejamento individualizado.</p></div>
+    <div><h3>8- Como ter acesso à imersão?</h3><p>Assim que seu pagamento for aprovado, você recebe acesso imediato à plataforma Hotmart. Pode assistir pelo celular, computador ou tablet, quando e onde quiser.</p></div>
+    <div><h3>9- A imersão tem suporte?</h3><p>Sim. Você terá acesso à área de membros e a uma equipe de suporte preparada para responder suas dúvidas dentro da plataforma.</p></div>
+    <div><h3>10- E se não funcionar pra mim?</h3><p>Você tem garantia blindada de 7 dias. Se não gostar, pode pedir 100% do dinheiro de volta. Sem letras miúdas, sem enrolação.</p></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="sec centro final" style="padding-top:0;padding-bottom:72px">
+  <h2>O momento perfeito é agora.</h2>
+  <div class="cta"><a class="btn" href="https://pay.hotmart.com/V108424352J">Participar da imersão ➔</a></div>
+</section>
+
+</main>
+
+<script>
+(function(){
+  var d=document.getElementById('zoom'); if(!d||!d.showModal) return;
+  var big=d.querySelector('img');
+  document.querySelectorAll('.depo button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var i=b.querySelector('img'); big.src=i.src; big.alt=i.alt; d.showModal();
+    });
+  });
+  d.addEventListener('click',function(){d.close()});
+})();
+</script>
+</body>
+</html>
